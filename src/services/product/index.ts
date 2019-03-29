@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { prisma } from "../prisma/generated/prisma-client";
+import { prisma } from "../../database/generated/prisma-client";
 import searchRoutes from "./search/routes";
 
 export default [

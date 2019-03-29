@@ -1,4 +1,4 @@
-import { prisma } from "../../prisma/generated/prisma-client";
+import { prisma } from "../../../database/generated/prisma-client";
 export const getProductsByName = async (q: string) => {
   // if (q.length < 3) {
   //   return [];

@@ -1,7 +1,24 @@
 {
   "version": 2,
-  "builds": [{
-    "src": "./dist/server.js",
-    "use": "@now/node-server"
-  }]
+  "name": "minze",
+  "builds": [
+    {
+      "src": "./dist/server.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/.*",
+      "dest": "/dist/server.js"
+    }
+  ],
+  "env": {
+    "VERSION": "@version"
+  }
 }
