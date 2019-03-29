@@ -4,9 +4,6 @@ import * as admin from "firebase-admin";
 // tslint:disable-next-line:no-submodule-imports
 import serviceAccount from "./serviceAccount.keys";
 
-import { prisma } from "../prisma/generated/prisma-client";
-
-
 admin.initializeApp({
   credential: admin.credential.cert (
     {
