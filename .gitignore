@@ -6,5 +6,5 @@
 node_modules
 dist
 coverage
-# **/*.key*
+**/*.key*
 .DS_Store
